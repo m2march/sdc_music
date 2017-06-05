@@ -3,25 +3,27 @@
 	<head>
 		<link rel="stylesheet" href="reveal.js/css/reveal.css">
 		<link rel="stylesheet" href="reveal.js/css/theme/white.css">
-        <link rel="stylesheet" href="reveal.js/css/musical.css">
+        <link rel="stylesheet" href="theme/musical.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section data-background-image="theme/imgs/back.jpg" data-background-size="30%" data-background-repeat="repeat">
                     <h2>Taller de programación musical</h2>
                     <h4>Semana de la computación</h4>
                 </section>
-                <section data-background-image="imgs/" data-background-repeat="repeat" class="intro">
+                <section data-background-image="theme/imgs/back.jpg" data-background-size="30%" data-background-repeat="repeat" class="quienes_somos">
                     <h2>¿Quiénes somos?</h2>
                     <img src="imgs/UBA.svg" style="border: none; box-shadow: none;">
                     <img src="imgs/logo_dc.svg" style="border: none; box-shadow: none;">
                 </section>
-                <section data-background-image="imgs/" data-background-repeat="repeat" class="intro">
+                <section>
                     <h2>¿Qué estudiamos?</h2>
                     <h3>Licenciatura en Ciencias de la Computación</h3>
                 </section>
-                <!--
+                <section>
+                    <h2>¿Qué vamos a hacer hoy?</h2>
+                </section>
 				<section>
                     <img src="imgs/band.jpg", style="width:75%;height:75%">
                     <h4>¿Esto es una canción?</h4>
@@ -54,40 +56,289 @@
                      Porque el código es una manera de darle instrucciomes a la computadora. En este caso, producir sonidos.
                     </p>
                 </section>
-                --!>
-                <section>
+                <section> 
+                <!-- Intro de música -->
                    <p style="text-align:left">
-                   En las canciones las notas tienen dos cualidades principales: 
+                       En las canciones las notas tienen dos cualidades principales: 
                    </p>
                    <p style="text-align:left">
-                   <ul>
-                   <li> Altura (si es aguda o grave) </li>
-                   <li> Tiempo donde suena</li>
-                   <ul>
+                     <ul>
+                       <li> Altura (si es aguda o grave) </li>
+                       <li> Tiempo (cuando suena)</li>
+                     <ul>
                    </p>
                 </section>
+                <section> <!-- Alturas como números -->
+                    <h2>Altura</h2>
+                    <p>
+                        En la computadora la altura se pueden representar con números.
+                    </p>
+                    <table>
+                    <tr>
+                        <th>
+                        <img src="imgs/guitar_neck.svg" style="float:left"> 
+                        </th>
+                        <th>
+                        <img src="imgs/piano_keys.svg" style="float:left"> 
+                        </th>
+                    </tr>
+                    </table>
+                    <audio controls>
+                        <source src="audios/alturas.wav"
+                                type="audio/wav">
+                    </audio>
+                    <todo class="todo">
+                    Recortar audios
+                        (Completar imagenes...)
+                        (Recortar audio...)
+                    </todo>
+                </section>
+                <section> <!-- Pulso base y ejemplos -->
+                    <p>
+                        Las canciones se rigen por un pulso base. </br>
+                        El pulso nos sirve para entender cuando suena cada sonido.
+                        </br>
+                    <video controls>
+                        <source src="video/pulso_1.mp4" type="video/mp4">
+                    </video>
+                    </p>
+                    <p class="fragment">
+                        Los sonidos no siempre suenan en todos los pulsos.
+                        <video controls>
+                            <source src="video/pulso_2.mp4" type="video/mp4">
+                        </video>
+                    </p>
+                </section>
+                <section> <!-- Más ejemplos de pulso -->
+                    <p>
+                        También puedo tener más de un sonido por pulso.
+                        <video controls>
+                            <source src="video/pulso_3.mp4" type="video/mp4">
+                        </video>
+                    </p>
+                    <p class="fragment">
+                        O muchos más. </br>
+                        <video controls>
+                            <source src="video/pulso_4.mp4" type="video/mp4">
+                        </video>
+                    </p>
+                </section>
+                <section> <!-- Hora de trabajar -->
+                    <h3> ¡Manos a la obra! </h3>
+                    <p>
+                    Ahora es su turno de aprender a decirle a la computadora
+                    que haga sonar música.
+                    </p>
+                </section>
+                <section> <!-- Interfaz sonic-pi -->
+                    <h4> Sonic-pi </h4>
+                    <img src="imgs/pantalla_sonic_anotada.svg"
+                         style="height:80%;aspect:auto"> 
+                    <aside class="notes">
+                        ¿Agregar otras pantallas?
+                        ¿Explicar los buffers para el caso de que alguna 
+                        se vaya y no semana cómo volver al Buffer 1?
+                    </aside> 
+                </section>
+                <section> <!-- Commando play -->
+                    <h4> Reproduciendo Notas</h4>
+                    <p>
+                    <img src="imgs/play_60.png">
+                    <audio controls>
+                        <source src="audios/play_60.wav">
+                    </audio>
+                    </p>
+                    <p>
+                    <img src="imgs/play_70.png">
+                    <audio controls>
+                        <source src="audios/play_70.wav">
+                    </audio>
+                    </p>
+                    <p>
+                    <img src="imgs/play_55.png">
+                    <audio controls>
+                        <source src="audios/play_55.wav">
+                    </audio>
+                    </p>
+                    <todo class="todo">
+                    Recortar audios
+                    </todo>
+                </section>
+                <section> <!-- Ejercicio play -->
+                    <h4>Ejercicio: hacer sonar 3 notas distintas al mismo
+                        tiempo</h4>
+                    <aside class="notes">
+                        Explicar como funciona la computadora cuando lee las
+                        tres líneas de play. Que las lee una después que la
+                        otra pero muy rápido y por eso suena todo junto.
+                    </aside>
+                </section> 
+                <section> <!-- Comando sleep -->
+                    <h4>¡Esperame!</h4>
+                    <p>
+                    La instrucción <span style="font-family:monospace">sleep
+                        1</span> le dice a la computadora que espere 1 pulso.
+                    </p>
+                    <img src="imgs/sleep_1.png"></br>
+                    <audio controls>
+                        <source src="audios/sleep_1.wav">
+                    </audio>
+                    <todo class="todo">Recortar audio</todo>
+                </section>
+                <section> <!-- Comando sleep con valor variable -->
+                    <p>
+                    El número al lado de 
+                    <span style="font-family:monospace">sleep</span>
+                    puede tener otros valores.
+                    </p>
+                    <p>
+                    ¿Cómo suena esto? </br>
+                    <img src="imgs/sleep_varios.png"> </br>
+                    <audio controls>
+                        <source src="audios/sleep_varios.wav">
+                    </audio>
+                    </p>
+                </section>
+                <section> <!-- Ejercicio sleep -->
+                    <h4>Ejercicio: escribir una melodía con tiempos variables</h4>
+                    <aside class="notes">
+                        ¿Ejercicio que tenga notas simultaneas y separadas
+                        también?
+                    </aside>
+                </section>
                 <section>
-                <h2>Altura</h2>
-                <p>
-                En la computadora la altura se pueden representar con números.
-                </p>
-                <p>
-                <img src="imgs/guitar_neck.svg" style="float:left"> 
-                <img src="imgs/piano_keys.svg" style="float:left"> 
-                </p>
-                <audio controls>
-                    <source src="audios/alturas.wav"
-                    type="audio/wav">
-                </audio>
-                <p>
-                (Completar imagenes...)
-                (Recortar audio...)
-                </p>
+                    <h4>¡Más rápido!</h4>
+                    En la música se habla de los "pulso por minuto" (se le
+                    dice bpm) de una canción. Los "pulsos por minuto" nos dicen
+                    que tan seguido suena casa pulso. A más pulsos por minuto
+                    más rápido suena.
+                    <span style="font-family:sans">use_bpm 120</span> le pide
+                    a la computadora que tenga 120 pulsos por minuto.
+                    <p>
+                    <img src="imgs/bpm.png"></br>
+                    <audio controls>
+                        <source src="audios/bpm.wav">
+                    </audio>
+                    <todo class="todo">
+                    Recortar audio
+                    </todo>
+                    </p>
+                </section>
+                <section>
+                    <h4>Ejercicio: probar haciendo sonar su canción a
+                        distintas velocidades.</h4>
+                    Recordatorio: cada vez que apretan "Run" la computadora
+                    usa el código como está escrito.
+                </section>
+                <section> <!-- Live loop -->
+                    <h4>¡Otra vez!</h4>
+                    <p>
+                        Un ciclo en programación le pide a la computadora que
+                        repita algo. En nuestro caso, significa que se repite la
+                        melodía.
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Para eso usamos 
+                        <span style="font-family:sans">live_loop</span>
+                        para rodear el código que se repite. "Loop" significa
+                        ciclo.
+                    </p>
+                    <img src="imgs/live_loop_anotado.svg" style="border:0"></br>
+                    <audio controls>
+                        <source src="audios/live_loop.wav">
+                    </audio>
+                </section>
+                <section>
+                    <h4>Ejercicio: encerrar a su melodía en un live_loop,
+                        ponerle nombre y ver como se repite.</h4>
+                    Recordatorio: el botón "Stop" para la música. Si apreto
+                    "Run" actualiza el sonido a lo que está escrito.
+                </section>
+                <section> <!-- Samples -->
+                    <h4>Samples</h4>
+                    Un sample es un pedacito de grabación corta. Sirve para
+                    agregar cosas nuevas a una canción. Por eso los DJ hoy
+                    usan computadoras.
+
+                    Sonic-pi tiene muchos samples. Por ejemplo:
+                    <audio controls>
+                        <source src="audios/eructo.wav">
+                    </audio>
+                </section>
+                <section>
+                    La instrucción
+                    <span style="font-family:sans">sample </span><span
+                          style="font-family:sans;color:purple">:misc_burp</span>
+                    indica a la computadora que reproduzca el sonido.</br>
+                    Hay muchos otros samples para usar.</br>
+                    <ul>
+                        <li>
+                            <span style="font-family:sans">sample </span>
+                            <span
+                                style="font-family:sans;color:purple">:ambi_lunar_land</span>
+                        </li>
+                        <li>
+                            <span style="font-family:sans">sample </span>
+                            <span
+                                style="font-family:sans;color:purple">:bass_hard_c</span>
+                        </li>
+                        <li>
+                            <span style="font-family:sans">sample </span>
+                            <span
+                                style="font-family:sans;color:purple">:elec_blup</span>
+                        </li>
+                    </ul></br>
+                    Los nombres de los samples empiezan con 
+                    <span style="font-family:sans;color:purple">:</span>
+                </section>
+                <section>
+                    <h4>Ejercicio: incluir samples en su melodía</h4>
+                    Recordar que los samples tienen una duración y hay que
+                    decirle a la computadora que espere después de hacerlo
+                    sonar.
+                </section>
+                <section>
+                    <h4>Batería</h4>
+                    En sonic-pi también hay sonidos de batería.</br>
+                    <img src="imgs/bateria.svg" style="border:0px;height:70%">
+                </section>
+                <section>
+                    <h4>Ejercicio: usando 
+                        <span style="font-family:sans">sample</span> y
+                        <span style="font-family:sans">sleep</span>, hacer
+                        sonar la base de rock. Para eso hacer sonar cada
+                        sample en el beat indicado en color.</h4>
+                    <img src="imgs/bateria.svg" style="border:0px;height:70%">
+                </section>
+                <section>
+                    <h4>Somos una banda</h4>
+                    Podemos usar dos live_loop con nombre distinto para varios
+                    instrumentos. Por ejemplo:</br>
+                    <table>
+                        <tr>
+                            <th>
+                            <img src="imgs/live_loop_2.png">
+                            </th>
+                            <th>
+                            <audio controls>
+                                <source src="audios/live_loop_2.wav">
+                            </audio>
+                            </th>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    De acá en adelante, es todo cuestión de imaginación.
+                </section>
 			</div>
 		</div>
 		<script src="reveal.js/js/reveal.js"></script>
 		<script>
-			Reveal.initialize();
+            Reveal.initialize({
+                history: true
+            });
 		</script>
 	</body>
 </html>
