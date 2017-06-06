@@ -8,11 +8,11 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="theme/imgs/back.jpg" data-background-size="30%" data-background-repeat="repeat">
+				<section>
                     <h2>Taller de programación musical</h2>
                     <h4>Semana de la computación</h4>
                 </section>
-                <section data-background-image="theme/imgs/back.jpg" data-background-size="30%" data-background-repeat="repeat" class="quienes_somos">
+                <section class="quienes_somos">
                     <h2>¿Quiénes somos?</h2>
                     <img src="imgs/UBA.svg" style="border: none; box-shadow: none;">
                     <img src="imgs/logo_dc.svg" style="border: none; box-shadow: none;">
@@ -42,22 +42,16 @@
                         </audio>
                     </p>
                 </section>
-                <section>
-                    <p style="color:purple;font-weight:bold">
-                    ¿Que tienen en común el código y la partitura?
-                    </p>
-                    <p class="fragment">
-                    Son instrucciones de cómo y cuándo hacer qué sonidos.
-                    </p>
-                    <p class="fragment" style="color:purple;font-weight:bold">
-                     ¿Porque el código (ese texto de colores) produce música?
-                    </p>
-                    <p class="fragment">
-                     Porque el código es una manera de darle instrucciomes a la computadora. En este caso, producir sonidos.
-                    </p>
+                <section> <!-- Introducción de Sonic-pi -->
+                    <h2> ¿Qué vamos a usar? </h2>
+                    <img src="imgs/sonic_pi_logo.png" style="width:50%;border: none; box-shadow: none;"> 
+                    <!-- <img src="imgs/pantalla_sonic_anotada.jpg" style="height:80%;aspect:auto">  -->
                 </section>
-                <section> 
-                <!-- Intro de música -->
+                <section> <!-- Interfaz sonic-pi -->
+                    <h4> Sonic-pi </h4>
+                    <img src="imgs/pantalla_sonic_anotada.jpg" style="height:80%;aspect:auto"> 
+                </section>
+                <section> <!-- Intro de música -->
                    <p style="text-align:left">
                        En las canciones las notas tienen dos cualidades principales: 
                    </p>
@@ -129,16 +123,6 @@
                     Ahora es su turno de aprender a decirle a la computadora
                     que haga sonar música.
                     </p>
-                </section>
-                <section> <!-- Interfaz sonic-pi -->
-                    <h4> Sonic-pi </h4>
-                    <img src="imgs/pantalla_sonic_anotada.svg"
-                         style="height:80%;aspect:auto"> 
-                    <aside class="notes">
-                        ¿Agregar otras pantallas?
-                        ¿Explicar los buffers para el caso de que alguna 
-                        se vaya y no semana cómo volver al Buffer 1?
-                    </aside> 
                 </section>
                 <section> <!-- Commando play -->
                     <h4> Reproduciendo Notas</h4>
@@ -337,7 +321,11 @@
 		<script src="reveal.js/js/reveal.js"></script>
 		<script>
             Reveal.initialize({
-                history: true
+                history: true,
+                parallaxBackgroundImage: 'theme/imgs/back.jpg',
+                parallaxBackgroundHorizontal: null,
+                parallaxBackgroundVertical: null,
+                parallaxBackgroundSize: '30%'
             });
 		</script>
 	</body>
