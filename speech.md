@@ -12,7 +12,11 @@
 ## Diapositiva: ¿Qué vamos a hacer hoy?
 - ¿Tienen idea de qué vamos a hacer hoy?
 - Hoy vamos a hacer un taller de programación musical.
-- ¿Alguna idea de qué trata? ¿Quién sabe lo que es programar?
+- ¿Alguna idea de qué trata?
+- Hoy vamos a programar una canción (o canciones).
+
+## Diapositiva: ¿Programar? ¿Y eso?
+- ¿Quién sabe lo que es programar?
 - Programar es la manera que tenemos de comunicar nuestras ideas, o lo que queremos hacer, a la computadora. Como estamos en un taller de programación musical, qué le podríamos querer decir a la computadora?
 - Vamos a decirle qué sonidos tiene que reproducir, como si le hablara a un músico y le dijera qué tiene que tocar.
 - Y, la computadora, entiende si yo le digo: "hacé tal sonido"? Pueden hablar inglés con un francés?
