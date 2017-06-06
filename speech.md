@@ -62,9 +62,9 @@
 
 ## Diapositiva: Tiempo
 - La parte que nos faltaba para armar una canción con las notas es el tiempo.
-- ¿Para qué no servía el tiempo?
-- Para decirle a Sonic-Pi cuándo tocar la nota.
+- ¿Para qué nos sirve el tiempo?
 - El tiempo en las canciones se determina por pulsos. Puedo elegir en qué pulso poner mis notas.
+- Esto también se puede hacer en Sonic-Pi. Nos sirve para decirle cuándo tocar la nota.
 - Como ven en el ejemplo (aclarar que no es Sonic-Pi), cada cuadradito es un pulso, en el primer pulso tengo un platillo, ¿en qué pulso tengo otro?. En el 5. Darle play.
 - ¿Cómo hago para tener una nota o un instrumento (en este caso), al mismo tiempo?
 - Toco el instrumento o la nota en el mismo pulso. Reprduzo el otro ejemplo.
