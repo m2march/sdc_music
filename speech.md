@@ -43,3 +43,34 @@
 - Después, para el número 3, stop, ¿qué les parece?
 - ¿Y el de rec?
 
+## Diapositiva: ¿Cómo le decimos a Sonic-Pi qué sonido tocar?
+- Ahora, ¿se les ocurre cómo decirle a Sonic-Pi qué sonidos, de entre todos los sonidos tocar?. ¿Qué tienen las partituras?
+- Notas.
+
+## Diapositiva: Altura
+- Las notas en las canciones tienen Altura, que es cuán grave o agudo es el sonido.
+- En las partituras, generalmente se usan símbolos o dibujos, en Sonic-Pi, números. Si ustedes tocan el piano o la guitarra, es como tocar esa nota en Sonic-Pi (mostrar los números en las teclas o guitarra).
+
+## Diapositiva: Sonic-Pi Play
+- Lo que vamos a hacer para decirle que toque la nota es escribir play y el número de la nota. Una vez que escriben play, espacio, número de la nota, pueden apretar en play y escuchar. Reproducir primer ejemplo.
+- ¿Y esta nota? ¿Es más grave o más aguda?
+- ¿Y, cómo escribo una más aguda?
+
+## Diapositiva: Tiempo
+- La parte que nos faltaba para armar una canción con las notas es el tiempo.
+- ¿Para qué no servía el tiempo?
+- Para decirle a Sonic-Pi cuándo tocar la nota.
+- El tiempo en las canciones se determina por pulsos. Puedo elegir en qué pulso poner mis notas.
+- Como ven en el ejemplo (aclarar que no es Sonic-Pi), cada cuadradito es un pulso, en el primer pulso tengo un platillo, ¿en qué pulso tengo otro?. En el 5. Darle play.
+- ¿Cómo hago para tener una nota o un instrumento (en este caso), al mismo tiempo?
+- Toco el instrumento o la nota en el mismo pulso. Reprduzo el otro ejemplo.
+
+## Diapositiva: Controlando el tiempo
+- ¿Cómo hacemos esto en Sonic-Pi? Con sleep.
+- Con sleep puedo decirle a Sonic-Pi que espere hasta el pulso que quiera, para poder hacer otro sonido.
+- Acá pueden ver un ejemplo. ¿Qué hace este ejemplo?
+- Toca una nota, espera al próximo pulso. En el próximo pulso, toca otra nota, y así hasta terminar.
+- Poner play al ejemplo.
+
+## Diapositiva: Ejercicio
+- Bueno, ahora, vamos a escribir nuestro primer programa, que haga sonidos de más graves a más agudos, ¡manos a la obra!.

@@ -45,28 +45,22 @@
                 <section> <!-- Introducción de Sonic-pi -->
                     <h2> ¿Qué vamos a usar? </h2>
                     <img src="imgs/sonic_pi_logo.png" style="width:50%;border: none; box-shadow: none;"> 
-                    <!-- <img src="imgs/pantalla_sonic_anotada.jpg" style="height:80%;aspect:auto">  -->
                 </section>
                 <section> <!-- Interfaz sonic-pi -->
                     <h4> Sonic-pi </h4>
                     <img src="imgs/pantalla_sonic_anotada.jpg" style="height:80%;aspect:auto"> 
                 </section>
-                <section> <!-- Intro de música -->
-                   <p style="text-align:left">
-                       En las canciones las notas tienen dos cualidades principales: 
-                   </p>
-                   <p style="text-align:left">
-                     <ul>
-                       <li> Altura (si es aguda o grave) </li>
-                       <li> Tiempo (cuando suena)</li>
-                     <ul>
-                   </p>
+                <section>
+                    <h3> ¿Cómo le decimos a Sonic-Pi qué sonido tocar? </h3>
+                    <span class="fragment">
+                        <h1 style="color: #00e600;"> Notas </h1>
+                        <img src="imgs/musical-notes.png" style="width:60%;border: none; box-shadow: none;"> 
+                    </span>
                 </section>
                 <section> <!-- Alturas como números -->
                     <h2>Altura</h2>
-                    <p>
-                        En la computadora la altura se pueden representar con números.
-                    </p>
+                    <p> Graves o agudas </p>
+                    <p> De 0 a 127 </p>
                     <table>
                     <tr>
                         <th>
@@ -81,13 +75,27 @@
                         <source src="audios/alturas.wav"
                                 type="audio/wav">
                     </audio>
-                    <todo class="todo">
-                    Recortar audios
-                        (Completar imagenes...)
-                        (Recortar audio...)
-                    </todo>
+                <!-- TODO: Recortar audios, completar imagenes? -->
                 </section>
-                <section> <!-- Pulso base y ejemplos -->
+                <section> <!-- Commando play -->
+                    <h4> Notas en Sonic-PI </h4>
+                    <p>
+                        <img src="imgs/play_60.png">
+                        <audio controls>
+                            <source src="audios/play_60.wav">
+                        </audio>
+                        </p>
+                    <p>
+                        <img src="imgs/play_70.png">
+                        <audio controls>
+                            <source src="audios/play_70.wav">
+                        </audio>
+                    </p>
+                    <!-- TODO: Recortar audios y emparejar imágenes -->
+                </section>
+                <section>
+                     <!-- Pulso base y ejemplos -->
+                    <h2> Tiempo </h2>
                     <p>
                         Las canciones se rigen por un pulso base. </br>
                         El pulso nos sirve para entender cuando suena cada sonido.
@@ -97,99 +105,40 @@
                     </video>
                     </p>
                     <p class="fragment">
-                        Los sonidos no siempre suenan en todos los pulsos.
-                        <video controls>
-                            <source src="video/pulso_2.mp4" type="video/mp4">
-                        </video>
-                    </p>
-                </section>
-                <section> <!-- Más ejemplos de pulso -->
-                    <p>
-                        También puedo tener más de un sonido por pulso.
+                        Puedo tener más de un sonido por pulso.
                         <video controls>
                             <source src="video/pulso_3.mp4" type="video/mp4">
                         </video>
                     </p>
-                    <p class="fragment">
-                        O muchos más. </br>
-                        <video controls>
-                            <source src="video/pulso_4.mp4" type="video/mp4">
-                        </video>
-                    </p>
                 </section>
-                <section> <!-- Hora de trabajar -->
-                    <h3> ¡Manos a la obra! </h3>
+                <section> <!-- Comando sleep -->
+                    <h4>Controlando el tiempo</h4>
                     <p>
-                    Ahora es su turno de aprender a decirle a la computadora
-                    que haga sonar música.
+                    Con <span style="font-family:monospace; color: #1BB053;">sleep 1</span> le decimos a Sonic-Pi que espere 1 pulso.
                     </p>
-                </section>
-                <section> <!-- Commando play -->
-                    <h4> Reproduciendo Notas</h4>
-                    <p>
-                    <img src="imgs/play_60.png">
-                    <audio controls>
-                        <source src="audios/play_60.wav">
-                    </audio>
-                    </p>
-                    <p>
-                    <img src="imgs/play_70.png">
-                    <audio controls>
-                        <source src="audios/play_70.wav">
-                    </audio>
-                    </p>
-                    <p>
-                    <img src="imgs/play_55.png">
-                    <audio controls>
-                        <source src="audios/play_55.wav">
-                    </audio>
-                    </p>
-                    <todo class="todo">
-                    Recortar audios
-                    </todo>
+                    <span class="fragment">
+                        <img src="imgs/sleep_1.png"></br>
+                        <audio controls>
+                            <source src="audios/sleep_1.wav">
+                        </audio>
+                        <todo class="todo">Recortar audio</todo>
+                    </span>
                 </section>
                 <section> <!-- Ejercicio play -->
-                    <h4>Ejercicio: hacer sonar 3 notas distintas al mismo
-                        tiempo</h4>
-                    <aside class="notes">
+                    <h3>Ejercicio:</h3>
+                    <h4>Hacer sonar varias notas, de la más grave a la más aguda</h4>
+                    <div style="border-style: solid;border-width: 5px; border-radius: 25px; background-color: white;">
+                        <h5 style="text-align: left; margin: 20px;">Recordar:</h5>
+                        <p style="text-align: left; margin-left: 7%;">- Tocar una nota: <span style="color: green;">play nota</span></p>
+                        <p style="text-align: left; margin-left: 7%;">- Esperar pulsos: <span style="color: blue;">sleep pulsos</span></p>
+                        <p style="text-align: left; margin-left: 7%;">- <span style="color: red;">0 más grave</span>, <span style="color: brown;">127 más aguda</span></p>
+                    </div>
+<!--                     <aside class="notes">
                         Explicar como funciona la computadora cuando lee las
                         tres líneas de play. Que las lee una después que la
                         otra pero muy rápido y por eso suena todo junto.
-                    </aside>
+                    </aside> -->
                 </section> 
-                <section> <!-- Comando sleep -->
-                    <h4>¡Esperame!</h4>
-                    <p>
-                    La instrucción <span style="font-family:monospace">sleep
-                        1</span> le dice a la computadora que espere 1 pulso.
-                    </p>
-                    <img src="imgs/sleep_1.png"></br>
-                    <audio controls>
-                        <source src="audios/sleep_1.wav">
-                    </audio>
-                    <todo class="todo">Recortar audio</todo>
-                </section>
-                <section> <!-- Comando sleep con valor variable -->
-                    <p>
-                    El número al lado de 
-                    <span style="font-family:monospace">sleep</span>
-                    puede tener otros valores.
-                    </p>
-                    <p>
-                    ¿Cómo suena esto? </br>
-                    <img src="imgs/sleep_varios.png"> </br>
-                    <audio controls>
-                        <source src="audios/sleep_varios.wav">
-                    </audio>
-                    </p>
-                </section>
-                <section> <!-- Ejercicio sleep -->
-                    <h4>Ejercicio: escribir una melodía con tiempos variables</h4>
-                    <aside class="notes">
-                        ¿Ejercicio que tenga notas simultaneas y separadas
-                        también?
-                    </aside>
-                </section>
                 <section>
                     <h4>¡Más rápido!</h4>
                     En la música se habla de los "pulso por minuto" (se le
