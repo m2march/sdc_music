@@ -78,3 +78,9 @@
 
 ## Diapositiva: Ejercicio
 - Bueno, ahora, vamos a escribir nuestro primer programa, que haga sonidos de más graves a más agudos, ¡manos a la obra!.
+
+## Diapositiva: ¡Más rápido!
+- Ahora, hay algo que no vimos antes, ¿Cuánto dura un pulso? ¿Un segundo? ¿Un minuto?
+- Sonic-Pi tiene configurado que haya 60 pulsos por minuto, es decir, 60 cuadraditos de los que vimos antes, se tocan en un minuto.
+- ¿Qué pasa si uso 120 pulsos por minuto? (Si están muy perdidos -> ¿Va más rápido o más lento?). Va más rápido toda la canción.
+
