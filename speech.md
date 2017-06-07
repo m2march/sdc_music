@@ -67,8 +67,8 @@ que suenan todos juntos? Esto va a dar la motivación para el sleep.*
 - ¿Para qué nos sirve el tiempo?
 - El tiempo en las canciones se determina por pulsos. Puedo elegir en qué pulso poner mis notas.
 - Esto también se puede hacer en Sonic-Pi. Nos sirve para decirle cuándo tocar la nota.
-- Como ven en el ejemplo (aclarar que no es Sonic-Pi), cada línea vertical es un pulso. El platillo suena en cada puslo. _Darle play._
-- Los cuadrados oscuros entre cada cuadrado clarito son divisiones del puslo.
+- Como ven en el ejemplo (_aclarar que no es Sonic-Pi_), cada línea vertical es un pulso. El platillo suena en cada pulso. _Darle play._
+- Los cuadrados oscuros entre cada cuadrado clarito son divisiones del pulso.
   Sirven para poner más de un sonido en cada pulso. 
 - En el segundo ejemplo el redoblante (línea dos) suena dos veces en el pulso 1
   y otras dos veces en el 3. El bombo (línea uno) suena solo en el pulso 1 y 3.
@@ -79,14 +79,15 @@ que suenan todos juntos? Esto va a dar la motivación para el sleep.*
 - Con sleep puedo decirle a Sonic-Pi que espere hasta el pulso que quiera, para poder hacer otro sonido.
 - Acá pueden ver un ejemplo. ¿Qué hace este ejemplo?
 - Toca una nota, espera al próximo pulso. En el próximo pulso, toca otra nota, y así hasta terminar.
-- Poner play al ejemplo.
+- _Poner play al ejemplo_.
 
 ## Diapositiva: Ejercicio
 - Bueno, ahora, vamos a escribir nuestro primer programa, que haga sonidos de más graves a más agudos, ¡manos a la obra!.
 
 ## Diapositiva: ¡Más rápido!
 - Ahora, hay algo que no vimos antes, ¿Cuánto dura un pulso? ¿Un segundo? ¿Un minuto?
-- Sonic-Pi tiene configurado que haya 60 pulsos por minuto, es decir, 60 cuadraditos de los que vimos antes, se tocan en un minuto.
+- Si no decimos nada, Sonic-Pi piensa que queremos 60 pulsos por minuto, es decir, 60 cuadraditos de los que vimos antes, se tocan en un minuto.
+- Con use_bpm podemos decirle cuantos pulsos por minuto queremos, cambiando la velocidad en que toca las notas.
 - ¿Qué pasa si uso 120 pulsos por minuto? (Si están muy perdidos -> ¿Va más rápido o más lento?). Va más rápido toda la canción.
 - Pueden probarlo rápidamente para ver cómo cambia.
 *Revisar: ¿bpm desp de live_loop? ¿Condensar ejercicio después de live_loop?*
