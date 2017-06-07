@@ -94,17 +94,9 @@ que suenan todos juntos? Esto va a dar la motivación para el sleep.*
 
 ## Diapositiva: ¡A meterle ritmo!
 - Bueno, ahora vamos a crear ritmos para nuestra canción, ¿cómo hacemos para repetir 2 veces lo que hicimos antes (la secuencia de más grave a más aguda)?. Muchos van a decir, copiar y pegar. Y, ¿si tengo que repetirlo para siempre?
-- Tenemos el live_loop. Para usarlo, escriben live_loop, como ven en (1), le sigue en (2) dos puntos y un nombre, el que quieran, sin espacios y luego en (3), do. La idea es que lo que escribieron, tiene que quedar entre el do y el end al final.
+- Tenemos el live_loop. El live_loop es como agarrar una persona, decirle que tocar y dejarlo tocando eso para siempre. _Chiste sobre eso_.
+- Para usarlo, escriben live_loop, como ven en (1), le sigue en (2) dos puntos y un nombre, el que quieran, sin espacios y luego en (3), do. La idea es que lo que escribieron, tiene que quedar entre el do y el end al final.
 - Prueben ahora rápido encerrar lo que escribieron con el live_loop y fijensé cómo queda su primer ritmo.
-
-- ¿Qué pasa si uso 120 pulsos por minuto? (_Si están muy perdidos_ -> ¿Va más rápido o más lento?). Va más rápido toda la canción.
-
-## Diapositiva: Ejercicio 2
-*Revisar: Ejercicio de poner la melodía en un live_loop y
-cambiar bpm. Quizá poner en la diapo la referncia del live_loop.
-
-Volver a aclarar lo del nombre del live_loop y que eso y el nombre del sample
-tiene que ir con :.*
 
 ## Diapositiva: Samples
 - Un sample es un pedacito de grabación corta que podemos incluir en nuestra canción.
@@ -116,5 +108,7 @@ tiene que ir con :.*
 - Vamos ahora a ponerle más onda a nuestra canción, vamos a armar una base de batería.
 - ¿Cómo vamos a hacerlo? Tenemos acá en la imágen, samples para cada una de las partes de la batería. ¿Cómo tengo que escribir para que suene un platillo?
 - Usando sample :drum_splash_hard
-- Como ya vimos el live_loop, y sabemos que un live_loop sería como una persona tocando, queremos hacerlo dentro de un live_loop.
-
+- Como ya vimos el live_loop, y sabemos que un live_loop sería como una persona tocando, queremos hacerlo dentro de un nuevo live_loop, con un nombre diferente.
+- Para saber en qué orden van, tenemos los números en cada una de las partes de la batería.
+- ¡Acuerdensé de usar sleeps para cambiar de pulso!.
+- Para los que hagan eso rápido, tienen en la hoja que les dimos, un montón de melodías para que prueben, en nuevos loops o cómo quieran.
