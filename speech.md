@@ -84,24 +84,30 @@ que suenan todos juntos? Esto va a dar la motivación para el sleep.*
 ## Diapositiva: Ejercicio
 - Bueno, ahora, vamos a escribir nuestro primer programa, que haga sonidos de más graves a más agudos, ¡manos a la obra!.
 
-## Diapositiva: Live_loop
-*TODO: Completar*
-
 ## Diapositiva: ¡Más rápido!
 - Ahora, hay algo que no vimos antes, ¿Cuánto dura un pulso? ¿Un segundo? ¿Un minuto?
 - Sonic-Pi tiene configurado que haya 60 pulsos por minuto, es decir, 60 cuadraditos de los que vimos antes, se tocan en un minuto.
+- ¿Qué pasa si uso 120 pulsos por minuto? (Si están muy perdidos -> ¿Va más rápido o más lento?). Va más rápido toda la canción.
+- Pueden probarlo rápidamente para ver cómo cambia.
+*Revisar: ¿bpm desp de live_loop? ¿Condensar ejercicio después de live_loop?*
+
+## Diapositiva: ¡A meterle ritmo!
+- Bueno, ahora vamos a crear ritmos para nuestra canción, ¿cómo hacemos para repetir 2 veces lo que hicimos antes (la secuencia de más grave a más aguda)?. Muchos van a decir, copiar y pegar. Y, ¿si tengo que repetirlo para siempre?
+- Tenemos el live_loop. Para usarlo, escriben live_loop, como ven en (1), le sigue en (2) dos puntos y un nombre, el que quieran, sin espacios y luego en (3), do. La idea es que lo que escribieron, tiene que quedar entre el do y el end al final.
+- Prueben ahora rápido encerrar lo que escribieron con el live_loop y fijensé cómo queda su primer ritmo.
+
 - ¿Qué pasa si uso 120 pulsos por minuto? (_Si están muy perdidos_ -> ¿Va más rápido o más lento?). Va más rápido toda la canción.
 
-## Diapositiva: Samples
-*TODO: Recortar diapo con ejemplos de samples y referirlos al cheat sheet.
-Reducir todo a una sola diapo.*
-
 ## Diapositiva: Ejercicio 2
-*Revisar: Ejercicio de poner la melodía en un live_loop, agregar samples y
+*Revisar: Ejercicio de poner la melodía en un live_loop y
 cambiar bpm. Quizá poner en la diapo la referncia del live_loop.
 
 Volver a aclarar lo del nombre del live_loop y que eso y el nombre del sample
 tiene que ir con :.*
+
+## Diapositiva: Samples
+*TODO: Recortar diapo con ejemplos de samples y referirlos al cheat sheet.
+Reducir todo a una sola diapo.*
 
 ## Diapositiva: Batería
 *TODO: Podemos decir que para que una canción tenga más onda se le puede
