@@ -107,8 +107,10 @@ Volver a aclarar lo del nombre del live_loop y que eso y el nombre del sample
 tiene que ir con :.*
 
 ## Diapositiva: Samples
-*TODO: Recortar diapo con ejemplos de samples y referirlos al cheat sheet.
-Reducir todo a una sola diapo.*
+- Un sample es un pedacito de grabación corta que podemos incluir en nuestra canción.
+- No sé si alguna vez vieron a los DJ's tocar, pero con varios samples en diferentes pulsos (_Hablamos de pulsos para que lo interioricen_), hacen canciones.
+- Para poner un sample, tienen que escribir en una nueva línea, sample, espacio, y el nombre, que empieza con dos puntos (_Mostrar imágen en pantalla_).
+- Acá tenemos algunos ejemplos (_Reproducir ejemplos_).
 
 ## Diapositiva: Batería
 *TODO: Podemos decir que para que una canción tenga más onda se le puede

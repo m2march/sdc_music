@@ -3,3 +3,18 @@
   height: 40%;
   position: relative;
 }
+
+#ejercicio_bateria #titulo {
+  font-size: 1.5em;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#ejercicio_bateria #subtitulo {
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
