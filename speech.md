@@ -1,5 +1,5 @@
 ## Diapositiva: Taller de programación musical
-- Saludos y preguntar de dónde vienen.
+- _Saludos y preguntar de dónde vienen._
 
 ## Diapositiva: ¿Quiénes somos?
 - ¿Alguien sabe quiénes somos y dónde estamos?
@@ -56,18 +56,23 @@
 - En las partituras, generalmente se usan símbolos o dibujos, en Sonic-Pi, números. Si ustedes tocan el piano o la guitarra, es como tocar esa nota en Sonic-Pi (mostrar los números en las teclas o guitarra).
 
 ## Diapositiva: Sonic-Pi Play
-- Lo que vamos a hacer para decirle que toque la nota es escribir play y el número de la nota. Una vez que escriben play, espacio, número de la nota, pueden apretar en play y escuchar. Reproducir primer ejemplo.
+- Lo que vamos a hacer para decirle que toque la nota es escribir play y el número de la nota. Una vez que escriben play, espacio, número de la nota, pueden apretar en play y escuchar. _Reproducir primer ejemplo._
 - ¿Y esta nota? ¿Es más grave o más aguda?
 - ¿Y, cómo escribo una más aguda?
+*TODO: ¿No habría que incluír un ejemplo de varios play juntos, para que vean
+que suenan todos juntos? Esto va a dar la motivación para el sleep.*
 
 ## Diapositiva: Tiempo
 - La parte que nos faltaba para armar una canción con las notas es el tiempo.
 - ¿Para qué nos sirve el tiempo?
 - El tiempo en las canciones se determina por pulsos. Puedo elegir en qué pulso poner mis notas.
 - Esto también se puede hacer en Sonic-Pi. Nos sirve para decirle cuándo tocar la nota.
-- Como ven en el ejemplo (aclarar que no es Sonic-Pi), cada cuadradito es un pulso, en el primer pulso tengo un platillo, ¿en qué pulso tengo otro?. En el 5. Darle play.
-- ¿Cómo hago para tener una nota o un instrumento (en este caso), al mismo tiempo?
-- Toco el instrumento o la nota en el mismo pulso. Reprduzo el otro ejemplo.
+- Como ven en el ejemplo (aclarar que no es Sonic-Pi), cada línea vertical es un pulso. El platillo suena en cada puslo. _Darle play._
+- Los cuadrados oscuros entre cada cuadrado clarito son divisiones del puslo.
+  Sirven para poner más de un sonido en cada pulso. 
+- En el segundo ejemplo el redoblante (línea dos) suena dos veces en el pulso 1
+  y otras dos veces en el 3. El bombo (línea uno) suena solo en el pulso 1 y 3.
+- _Reproduzco el otro ejemplo._
 
 ## Diapositiva: Controlando el tiempo
 - ¿Cómo hacemos esto en Sonic-Pi? Con sleep.
@@ -79,8 +84,32 @@
 ## Diapositiva: Ejercicio
 - Bueno, ahora, vamos a escribir nuestro primer programa, que haga sonidos de más graves a más agudos, ¡manos a la obra!.
 
+## Diapositiva: Live_loop
+*TODO: Completar*
+
 ## Diapositiva: ¡Más rápido!
 - Ahora, hay algo que no vimos antes, ¿Cuánto dura un pulso? ¿Un segundo? ¿Un minuto?
 - Sonic-Pi tiene configurado que haya 60 pulsos por minuto, es decir, 60 cuadraditos de los que vimos antes, se tocan en un minuto.
-- ¿Qué pasa si uso 120 pulsos por minuto? (Si están muy perdidos -> ¿Va más rápido o más lento?). Va más rápido toda la canción.
+- ¿Qué pasa si uso 120 pulsos por minuto? (_Si están muy perdidos_ -> ¿Va más rápido o más lento?). Va más rápido toda la canción.
 
+## Diapositiva: Samples
+*TODO: Recortar diapo con ejemplos de samples y referirlos al cheat sheet.
+Reducir todo a una sola diapo.*
+
+## Diapositiva: Ejercicio 2
+*Revisar: Ejercicio de poner la melodía en un live_loop, agregar samples y
+cambiar bpm. Quizá poner en la diapo la referncia del live_loop.
+
+Volver a aclarar lo del nombre del live_loop y que eso y el nombre del sample
+tiene que ir con :.*
+
+## Diapositiva: Batería
+*TODO: Podemos decir que para que una canción tenga más onda se le puede
+agregar una base. Eso se hace con otro instrumento. Un buen instrumento para
+eso es la batería. Esto también lo podemos hacer en sonic-pi.
+
+Presentar las partes de una batería y mostrar que hay samples para cada una.
+
+Se les puede hacer escuchar la base de rock y preguntarles si la conocen. 
+
+Después explicarle el patrón temporal con los números.*
