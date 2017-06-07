@@ -83,4 +83,10 @@
 - Ahora, hay algo que no vimos antes, ¿Cuánto dura un pulso? ¿Un segundo? ¿Un minuto?
 - Sonic-Pi tiene configurado que haya 60 pulsos por minuto, es decir, 60 cuadraditos de los que vimos antes, se tocan en un minuto.
 - ¿Qué pasa si uso 120 pulsos por minuto? (Si están muy perdidos -> ¿Va más rápido o más lento?). Va más rápido toda la canción.
+- Pueden probarlo rápidamente para ver cómo cambia.
+
+## Diapositiva: ¡A meterle ritmo!
+- Bueno, ahora vamos a crear ritmos para nuestra canción, ¿cómo hacemos para repetir 2 veces lo que hicimos antes (la secuencia de más grave a más aguda)?. Muchos van a decir, copiar y pegar. Y, ¿si tengo que repetirlo para siempre?
+- Tenemos el live_loop. Para usarlo, escriben live_loop, como ven en (1), le sigue en (2) dos puntos y un nombre, el que quieran, sin espacios y luego en (3), do. La idea es que lo que escribieron, tiene que quedar entre el do y el end al final.
+- Prueben ahora rápido encerrar lo que escribieron con el live_loop y fijensé cómo queda su primer ritmo.
 
