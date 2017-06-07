@@ -38,7 +38,8 @@
                     <h4>¿Y esto?</h4>
                 </section>
 				<section>
-                    <img src="imgs/cancion_sonic.png" style="width: 60%;aspect:auto">
+                    <img src="imgs/cancion_sonic.png" 
+                         style="width:60%;aspect:auto;margin-top:-1%">
                     <h4>¿Y esto?</h4>
                     <p class="fragment">
                         <audio controls>
@@ -64,15 +65,16 @@
                 </section>
                 <section> <!-- Alturas como números -->
                     <h2>Altura</h2>
-                    <p> Graves o agudas </p>
-                    <p> De 0 a 127 </p>
+                    <p> Graves o agudas. De 0 a 127 </p>
                     <table>
                     <tr>
                         <th>
-                        <img src="imgs/guitar_neck.svg" style="float:left"> 
+                        <img src="imgs/guitar_neck.png"
+                             style="float:left;height:150%"> 
                         </th>
                         <th>
-                        <img src="imgs/piano_keys.svg" style="float:left"> 
+                        <img src="imgs/piano_keys.svg" 
+                             style="float:left;height:120%"> 
                         </th>
                     </tr>
                     </table>
@@ -85,13 +87,13 @@
                 <section> <!-- Commando play -->
                     <h4> Notas en Sonic-PI </h4>
                     <p>
-                        <img src="imgs/play_60.png">
+                        <img src="imgs/play_60.png"></br>
                         <audio controls>
                             <source src="audios/play_60.wav">
                         </audio>
                         </p>
                     <p>
-                        <img src="imgs/play_70.png">
+                        <img src="imgs/play_70.png"></br>
                         <audio controls>
                             <source src="audios/play_70.wav">
                         </audio>
@@ -158,9 +160,10 @@
                     <h4>¡A meterle ritmo!</h4>
                     <p>¿Cómo hacemos para repetir nuestras notas?</p>
                     <span class="fragment">
-                        <p>Usamos
-                            <span style="font-family:monospace; color: #1BB053;">live_loop</span>
-                            para rodear el código que se repite.
+                        <p style="width:120%;margin-left:-10%">
+                        Usamos <span style="font-family:monospace; color:
+                            #1BB053;">live_loop</span> para rodear el código
+                        que se repite.
                         </p>
                         <img src="imgs/live_loop.jpg" style="border:none; width:34%;">
                         <br>
