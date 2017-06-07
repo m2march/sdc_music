@@ -112,13 +112,9 @@ tiene que ir con :.*
 - Para poner un sample, tienen que escribir en una nueva línea, sample, espacio, y el nombre, que empieza con dos puntos (_Mostrar imágen en pantalla_).
 - Acá tenemos algunos ejemplos (_Reproducir ejemplos_).
 
-## Diapositiva: Batería
-*TODO: Podemos decir que para que una canción tenga más onda se le puede
-agregar una base. Eso se hace con otro instrumento. Un buen instrumento para
-eso es la batería. Esto también lo podemos hacer en sonic-pi.
+## Diapositiva: Ejercicio: Armando nuestra batería
+- Vamos ahora a ponerle más onda a nuestra canción, vamos a armar una base de batería.
+- ¿Cómo vamos a hacerlo? Tenemos acá en la imágen, samples para cada una de las partes de la batería. ¿Cómo tengo que escribir para que suene un platillo?
+- Usando sample :drum_splash_hard
+- Como ya vimos el live_loop, y sabemos que un live_loop sería como una persona tocando, queremos hacerlo dentro de un live_loop.
 
-Presentar las partes de una batería y mostrar que hay samples para cada una.
-
-Se les puede hacer escuchar la base de rock y preguntarles si la conocen. 
-
-Después explicarle el patrón temporal con los números.*
