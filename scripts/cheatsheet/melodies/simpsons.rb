@@ -1,5 +1,4 @@
 use_bpm 80
-#use_synth :chiplead
 
 play 72  # :c5
 sleep 0.75
@@ -22,4 +21,6 @@ sleep 0.25
 play 66  # :fs4
 sleep 0.25
 play 66  # :fs4
+sleep 0.25
+play 67  # :g4
 sleep 0.25
