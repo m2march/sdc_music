@@ -1,18 +1,20 @@
- sample :drum_heavy_kick
-  sleep 0.5
-  sample :drum_heavy_kick
-  sleep 0.5
-  sample :drum_snare_soft
-  sleep 0.5
-  sample :drum_heavy_kick
-  sleep 0.25
-  sample :drum_snare_soft
-  sleep 0.25
-  sample :drum_heavy_kick
-  sleep 0.25
-  sample :drum_snare_soft
-  sleep 0.25
-  sample :drum_heavy_kick
-  sleep 0.5
-  sample :drum_snare_soft
-  sleep 1
+use_bpm 120
+
+sample :drum_heavy_kick
+sleep 0.5
+sample :drum_heavy_kick
+sleep 0.5
+sample :drum_snare_soft
+sleep 0.5
+sample :drum_heavy_kick
+sleep 0.25
+sample :drum_snare_soft
+sleep 0.25
+sample :drum_heavy_kick
+sleep 0.25
+sample :drum_snare_soft
+sleep 0.25
+sample :drum_heavy_kick
+sleep 0.5
+sample :drum_snare_soft
+sleep 1
