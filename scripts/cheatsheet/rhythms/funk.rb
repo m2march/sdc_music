@@ -1,0 +1,12 @@
+  sample :drum_bass_hard
+  sleep 0.5
+  sample :drum_cymbal_pedal
+  sleep 0.25
+  sample :drum_cymbal_closed
+  sleep 0.25
+  sample :drum_snare_soft
+  sleep 0.5
+  sample :drum_cymbal_pedal
+  sleep 0.25
+  sample :drum_cymbal_closed
+  sleep 0.25
