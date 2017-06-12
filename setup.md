@@ -4,21 +4,22 @@
 
 Una vez loggeado el usuario de ubuntu en las pcs:
 
-1. Iniciar QJackCtl
+1. Iniciar QJackCtl.
 
 ![](guia_audio/qjackctl_icon.png)
 
-2. Iniciar el server de jack
+2. Iniciar el server de jack.
 
 ![](guia_audio/jack_start.png)
 
-3. El servidor debería decir _started_
+3. El servidor debería decir _started_.
+
    _Como efecto secundario el resto de las aplicaciones no podrán emitir
 sonido, ver abajo._
 
 ![](guia_audio/jack_started.png)
 
-4. Arrancar Sonic-pi
+4. Arrancar Sonic-pi.
 
 ![](guia_audio/sonic_pi.png)
 
@@ -39,7 +40,7 @@ las placas de audio.
 
 ALSA no soporta reproducir sonido de más de una aplicación a la vez.
 Ahí entra PulseAudio, una capa superior que se encarga de administrar eso,
-entre otras cosas [^why_pulseaudio].
+entre otras cosas ([ver mas](https://unix.stackexchange.com/questions/249342/why-do-you-need-pulseaudio)).
 
 En una configuración común, las aplicaciones se comunican con PulseAudio, que
 habla con ALSA que le escribe a la placa de sonido (en realidad, la
@@ -54,8 +55,9 @@ serie de aplicaciones o dispositivos que reciben y emiten audio y uno quiere
 conectar las entradas y salidas entre si. Jack habla directamente con ALSA y,
 salvo configuración extra, bloquea el funcionamiento de PulseAudio.
 
-_Esto tiene como efecto que al iniciar Jack como en el paso 2, toda otra
-aplicación en la PC no pueda emitir sonido._
+
+    Esto tiene como efecto que al iniciar Jack como en el paso 2, toda otra
+    aplicación en la PC no pueda emitir sonido.
 
 
 #### Jack y Sonic-pi
@@ -65,7 +67,6 @@ comunicarse con Supercollider, que provee un servicio que sintetiza audio en
 tiempo real. Supercollider se comunica con la placa de sonido a traves de Jack,
 motivo por el cual necesitamos el sevidor de Jack también corriendo.
 
-Esto se puede ver en la ventana de conexiones de QJackCtl
+Esto se puede ver en la ventana de conexiones de QJackCtl.
 
 ![](guia_audio/supercollider_connection.png)
-[^why_pulseaudio]: https://unix.stackexchange.com/questions/249342/why-do-you-need-pulseaudio
