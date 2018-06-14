@@ -1,3 +1,10 @@
+## Configuración incial
+
+Para hacer andar Sonic-pi correctamente es necesario haber iniciado el servidor
+de Jack correctamente antes. La forma de hacer esto es utilizando QJackCtl.
+
+Ver la [guia de setup](./setup.md).
+
 ## Diapositiva: Taller de programación musical
 - _Saludos y preguntar de dónde vienen._
 

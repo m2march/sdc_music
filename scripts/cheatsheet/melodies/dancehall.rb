@@ -1,3 +1,5 @@
+use_bpm 100
+
 play 69  # Am
 play 72
 play 76
